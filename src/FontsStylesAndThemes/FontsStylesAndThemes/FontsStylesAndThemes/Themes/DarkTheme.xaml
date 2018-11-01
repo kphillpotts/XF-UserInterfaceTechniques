@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary
+    x:Class="FontsStylesAndThemes.Themes.DarkTheme"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:styles="clr-namespace:FontsStylesAndThemes.Styles">
+
+    <ResourceDictionary.MergedDictionaries>
+        <styles:Colors />
+        <styles:Literals />
+        <styles:Sizes />
+        <styles:FontStyles />
+        <styles:Styles />
+        <styles:GlobalStyles />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!--  color overrides  -->
+    <Color x:Key="BackgroundColor">#052142</Color>
+
+    <Color x:Key="AccentColor">#a82121</Color>
+    <Color x:Key="DefaultTextColor">#dbdbdb</Color>
+    <Color x:Key="SecondaryTextColor">#004462</Color>
+
+    <x:String x:Key="LogoImage">moon.png</x:String>
+</ResourceDictionary>

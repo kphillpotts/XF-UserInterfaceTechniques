@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary
+    x:Class="FontsStylesAndThemes.Themes.DiscoTheme"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:styles="clr-namespace:FontsStylesAndThemes.Styles">
+
+    <ResourceDictionary.MergedDictionaries>
+        <styles:Colors />
+        <styles:Literals />
+        <styles:Sizes />
+        <styles:FontStyles />
+        <styles:Styles />
+        <styles:GlobalStyles />
+    </ResourceDictionary.MergedDictionaries>
+
+    <OnPlatform
+        x:Key="HeaderFontFamily"
+        x:TypeArguments="x:String"
+        Android="Quicksand-Bold.ttf#Quicksand-Bold"
+        iOS="Quicksand-Bold" />
+
+    <OnPlatform
+        x:Key="BodyFontFamily"
+        x:TypeArguments="x:String"
+        Android="Quicksand-Light.ttf#Quicksand-Light"
+        iOS="Quicksand-Light" />
+
+    <Color x:Key="BackgroundColor">#f3ffbd</Color>
+
+    <Color x:Key="AccentColor">#ff1654</Color>
+    <Color x:Key="DefaultTextColor">#247ba0</Color>
+    <Color x:Key="SecondaryTextColor">#70c1b3</Color>
+
+    <x:Double x:Key="H1FontSize">40</x:Double>
+    <x:Double x:Key="H2FontSize">16</x:Double>
+    <x:Double x:Key="BodyFontSize">14</x:Double>
+
+    <x:Double x:Key="PagePadding">60</x:Double>
+
+    <Style TargetType="StackLayout">
+        <Setter Property="Spacing" Value="40" />
+    </Style>
+
+    <x:String x:Key="LogoImage">disco.png</x:String>
+</ResourceDictionary>

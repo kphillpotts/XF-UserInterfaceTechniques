@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="FontsStylesAndThemes.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:FontsStylesAndThemes"
+    BackgroundColor="{DynamicResource BackgroundColor}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackLayout Grid.Row="0" Padding="{DynamicResource PagePadding}">
+            <!--  Place new controls here  -->
+            <Label Style="{DynamicResource H1LabelStyle}" Text="H1 Label" />
+            <Label Style="{DynamicResource H2LabelStyle}" Text="H2 Label" />
+            <Label Style="{DynamicResource BodyLabelStyle}" Text="Body Label" />
+            <Image Source="{DynamicResource LogoImage}" />
+        </StackLayout>
+
+        <StackLayout
+            Grid.Row="1"
+            Padding="10"
+            Orientation="Horizontal">
+            <Picker
+                x:Name="ThemePicker"
+                Title="Select a theme"
+                HorizontalOptions="FillAndExpand"
+                SelectedIndexChanged="ThemePicker_SelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>Default</x:String>
+                    <x:String>Dark</x:String>
+                    <x:String>Disco</x:String>
+                </Picker.Items>
+            </Picker>
+        </StackLayout>
+
+    </Grid>
+
+</ContentPage>

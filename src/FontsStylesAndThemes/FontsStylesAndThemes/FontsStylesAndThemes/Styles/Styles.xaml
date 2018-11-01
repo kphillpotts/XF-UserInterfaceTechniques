@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary
+    x:Class="FontsStylesAndThemes.Styles.Styles"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Style x:Key="H1LabelStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource AccentColor}" />
+        <Setter Property="FontSize" Value="{DynamicResource H1FontSize}" />
+        <Setter Property="FontFamily" Value="{DynamicResource HeaderFontFamily}" />
+    </Style>
+
+    <Style x:Key="H2LabelStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource SecondaryTextColor}" />
+        <Setter Property="FontSize" Value="{DynamicResource H2FontSize}" />
+        <Setter Property="FontFamily" Value="{DynamicResource HeaderFontFamily}" />
+    </Style>
+
+    <Style x:Key="BodyLabelStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource DefaultTextColor}" />
+        <Setter Property="FontSize" Value="{DynamicResource BodyFontSize}" />
+        <Setter Property="FontFamily" Value="{DynamicResource BodyFontFamily}" />
+    </Style>
+
+
+</ResourceDictionary>

@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Layouts.ViewCellOverlapping"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:circle="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+    Title="Great Places"
+    BackgroundColor="Black">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="BodyTextColor">#FFFFFF</Color>
+
+
+            <!--  font families  -->
+            <OnPlatform
+                x:Key="RegularFontFamily"
+                x:TypeArguments="x:String"
+                Android="sans-serif"
+                iOS="HelveticaNeue" />
+            <OnPlatform
+                x:Key="LightFontFamily"
+                x:TypeArguments="x:String"
+                Android="sans-serif-light"
+                iOS="HelveticaNeue-Light" />
+            <OnPlatform
+                x:Key="MediumFontFamily"
+                x:TypeArguments="x:String"
+                Android="sans-serif-medium"
+                iOS="HelveticaNeue-Medium" />
+            <OnPlatform
+                x:Key="BoldFontFamily"
+                x:TypeArguments="x:String"
+                Android="sans-serif-medium"
+                iOS="HelveticaNeue-Bold" />
+
+
+            <!--  styles  -->
+            <Style x:Key="TitleLabel" TargetType="Label">
+              <Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
+              <Setter Property="FontFamily" Value="{StaticResource BoldFontFamily}" />
+              <Setter Property="FontSize" Value="20"/>
+            </Style>
+
+            <Style x:Key="HandleLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
+              <Setter Property="FontFamily" Value="{StaticResource BoldFontFamily}" />
+              <Setter Property="FontSize" Value="12"/>
+            </Style>
+
+            <Style x:Key="BodyLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
+              <Setter Property="FontFamily" Value="{StaticResource LightFontFamily}" />
+              <Setter Property="FontSize" Value="12"/>
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+
+    <Grid>
+        <Image
+            Aspect="Fill"
+            HorizontalOptions="Fill"
+            Source="ColoredBackground"
+            VerticalOptions="Fill" />
+        <ListView
+            x:Name="placeList"
+            BackgroundColor="Transparent"
+            ItemsSource="{Binding .}"
+            RowHeight="200"
+            SeparatorVisibility="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid
+                            Margin="10,5"
+                            ColumnSpacing="0"
+                            RowSpacing="5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="AUTO" />
+                            </Grid.RowDefinitions>
+
+                            <Image
+                                Grid.RowSpan="2"
+                                Aspect="AspectFill"
+                                Source="{Binding HeroImage}" />
+                            <Image
+                                Grid.RowSpan="2"
+                                Aspect="Fill"
+                                HorizontalOptions="Fill"
+                                Source="ShadowOverlay"
+                                VerticalOptions="End" />
+
+                            <Grid
+                                Grid.Row="1"
+                                Margin="10"
+                                ColumnSpacing="10"
+                                RowSpacing="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="AUTO" />
+                                    <RowDefinition Height="25" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="AUTO" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label
+                                    Grid.Row="0"
+                                    Grid.ColumnSpan="3"
+                                    LineBreakMode="NoWrap"
+                                    Style="{StaticResource TitleLabel}"
+                                    Text="{Binding Title}" />
+
+                                <circle:CircleImage
+                                    Grid.Row="1"
+                                    Grid.Column="0"
+                                    Aspect="AspectFill"
+                                    HeightRequest="25"
+                                    Source="{Binding ProfileImage}"
+                                    WidthRequest="25" />
+                                <Label
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    Style="{StaticResource HandleLabel}"
+                                    Text="{Binding Handle}"
+                                    VerticalOptions="Center" />
+
+                                <StackLayout
+                                    Grid.Row="1"
+                                    Grid.Column="2"
+                                    Orientation="Horizontal"
+                                    Spacing="5"
+                                    VerticalOptions="Center">
+                                    <Image Source="Eye" />
+                                    <Label Style="{StaticResource HandleLabel}" Text="{Binding ViewCount, StringFormat='{0:N0}'}" />
+                                    <Label Style="{StaticResource BodyLabel}" Text="views" />
+                                </StackLayout>
+                            </Grid>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</ContentPage>

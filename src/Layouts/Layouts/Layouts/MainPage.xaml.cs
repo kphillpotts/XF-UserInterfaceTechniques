@@ -16,7 +16,24 @@ namespace Layouts
 
         private void overlappingGridButton_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new ResponsiveGrid());
         }
+
+
+        private void circleImageButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new CircleImagePage());
+        }
+
+        private void viewCellOverlappingButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ViewCellOverlapping());
+        }
+
+        private void nonRectuangularHeaderButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new NonRectangularHeader());
+        }
+
     }
 }

@@ -1,11 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Layouts"
-             x:Class="Layouts.MainPage">
+<ContentPage
+    x:Class="Layouts.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Layouts">
 
-    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-        <Button x:Name="overlappingGridButton" Text="Responsive Grid" Clicked="overlappingGridButton_Clicked"/>
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Button
+            x:Name="overlappingGridButton"
+            Clicked="overlappingGridButton_Clicked"
+            Text="Responsive Grid" />
+        <Button
+            x:Name="circleImageButton"
+            Clicked="circleImageButton_Clicked"
+            Text="Circle Images" />
+        <Button
+            x:Name="viewCellOverlappingButton"
+            Clicked="viewCellOverlappingButton_Clicked"
+            Text="Circle Images" />
+        <Button
+            x:Name="nonRectuangularHeaderButton"
+            Clicked="nonRectuangularHeaderButton_Clicked"
+            Text="Non Rectangular Header" />
+
+
     </StackLayout>
 
 </ContentPage>

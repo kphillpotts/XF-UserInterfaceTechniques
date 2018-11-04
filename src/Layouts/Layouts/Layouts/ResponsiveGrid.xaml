@@ -1,18 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Layouts.ResponsiveGrid">
+<ContentPage
+    x:Class="Layouts.ResponsiveGrid"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <Grid>
+    <Grid ColumnSpacing="0" RowSpacing="0">
         <Grid.RowDefinitions>
-            <RowDefinition Height="150"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="120" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <BoxView BackgroundColor="Yellow" Grid.Row="0"/>
-        <BoxView BackgroundColor="LightBlue" Grid.Row="1"/>
-        <BoxView WidthRequest="80" HeightRequest="80" VerticalOptions="End" HorizontalOptions="Center" TranslationY="40"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
 
+        <BoxView
+            Grid.Row="0"
+            Grid.ColumnSpan="2"
+            BackgroundColor="Yellow" />
+        <BoxView
+            Grid.Row="1"
+            Grid.Column="0"
+            BackgroundColor="LightBlue" />
+        <BoxView
+            Grid.Row="1"
+            Grid.Column="1"
+            BackgroundColor="LightGreen" />
+        <BoxView
+            Grid.ColumnSpan="2"
+            BackgroundColor="Red"
+            HeightRequest="80"
+            HorizontalOptions="Center"
+            TranslationY="40"
+            VerticalOptions="End"
+            WidthRequest="80" />
     </Grid>
-    
+
 </ContentPage>

@@ -148,6 +148,12 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="SkiaSharp.Views.Forms">
+      <Version>1.60.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugins.Forms.ImageCircle">
+      <Version>3.0.0.5</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="3.3.0.967583" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
@@ -156,5 +162,65 @@
       <Project>{ACFF352F-7D59-473D-9C04-022C3C3330CA}</Project>
       <Name>Layouts</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\CookieMonster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Person_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Person_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Person_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Person_5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\snow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\combi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Fiji.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\greekisland.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Hipster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Person_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Eye%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Eye%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ColoredBackground%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ColoredBackground%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ColoredBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ShadowOverlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ShadowOverlay%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ShadowOverlay%403x.png" />
   </ItemGroup>
 </Project>

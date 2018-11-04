@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ImageCircle.Forms.Plugin.UWP;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -53,7 +54,7 @@ namespace Layouts.UWP
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
                 Xamarin.Forms.Forms.Init(e);
-
+                ImageCircleRenderer.Init();
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
                     //TODO: Load state from previously suspended application

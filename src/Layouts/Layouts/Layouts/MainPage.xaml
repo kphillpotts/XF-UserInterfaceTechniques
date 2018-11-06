@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="Layouts.MainPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
@@ -17,13 +17,11 @@
         <Button
             x:Name="viewCellOverlappingButton"
             Clicked="viewCellOverlappingButton_Clicked"
-            Text="Circle Images" />
+            Text="Overlapping View Cell" />
         <Button
             x:Name="nonRectuangularHeaderButton"
             Clicked="nonRectuangularHeaderButton_Clicked"
             Text="Non Rectangular Header" />
-
-
     </StackLayout>
 
 </ContentPage>

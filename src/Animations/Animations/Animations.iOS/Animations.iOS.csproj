@@ -153,8 +153,14 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\Animations\Animations.csproj">
-      <Project>{05AAE74B-E57B-4ACB-BCD1-19BCFC842116}</Project>
+      <Project>{1049DEFB-A013-4533-AC1C-09903C65C259}</Project>
       <Name>Animations</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FadeToBlack.png" />
+    <BundleResource Include="Resources\Gradient.png" />
+    <BundleResource Include="Resources\mugello.jpg" />
+    <BundleResource Include="Resources\Astro.png" />
   </ItemGroup>
 </Project>

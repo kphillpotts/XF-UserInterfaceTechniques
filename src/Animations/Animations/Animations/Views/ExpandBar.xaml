@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Animations.Views.ExpandBar">
+
+    <Grid RowSpacing="0" ColumnSpacing="0" >
+        <Image Source="FadeToBlack.png" Aspect="Fill" HorizontalOptions="Fill" />
+        <BoxView BackgroundColor="{StaticResource DarkBackground}" Grid.Row="1"/>
+        <Label Grid.Row="1" x:Name="ExpandLabel" Text="Tap for info" HorizontalOptions="Fill" HorizontalTextAlignment="Center" TextColor="{StaticResource LightText}" />
+    </Grid>
+</ContentView>

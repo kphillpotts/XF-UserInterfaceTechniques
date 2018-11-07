@@ -13,5 +13,17 @@ namespace Animations
         {
             InitializeComponent();
         }
+
+        public void Handle_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AnimationPage());
+        }
+
+        public void BindablePropertiesButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new VisualElementPropertiesPage());
+        }
+
+
     }
 }

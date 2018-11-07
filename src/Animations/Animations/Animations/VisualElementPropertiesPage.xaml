@@ -1,0 +1,34 @@
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Transforms" x:Class="Animations.VisualElementPropertiesPage"
+             Title="Bindable Properties" Padding="10">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Reset" Clicked="Handle_Clicked" />
+    </ContentPage.ToolbarItems>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Image x:Name="Target" Source="Astro.png" HorizontalOptions="Center" VerticalOptions="Center" Scale="{Binding Source={x:Reference ScaleSlider}, Path=Value}" Opacity="{Binding Source={x:Reference OpacitySlider}, Path=Value}" TranslationX="{Binding Source={x:Reference TranslationXSlider}, Path=Value}" TranslationY="{Binding Source={x:Reference TranslationYSlider}, Path=Value}" Rotation="{Binding Source={x:Reference RotationSlider}, Path=Value}" RotationX="{Binding Source={x:Reference RotationXSlider}, Path=Value}"
+            RotationY="{Binding Source={x:Reference RotationYSlider}, Path=Value}" />
+        <Frame Grid.Row="1" HasShadow="true" HeightRequest="200" BackgroundColor="#EEEEEE">
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="{Binding Source={x:Reference ScaleSlider}, Path=Value, StringFormat='Scale ({0:N})'}" />
+                    <Slider x:Name="ScaleSlider" Minimum="0" Maximum="3" Value="1" Margin="20,0,20,0" />
+                    <Label Text="{Binding Source={x:Reference OpacitySlider}, Path=Value, StringFormat='Opacity ({0:N})'}" />
+                    <Slider x:Name="OpacitySlider" Minimum="0" Maximum="1" Value="1" Margin="20,0,20,0" />
+                    <Label Text="{Binding Source={x:Reference TranslationXSlider}, Path=Value, StringFormat='Translation X ({0:N})'}" />
+                    <Slider x:Name="TranslationXSlider" Minimum="-300" Maximum="300" Value="0" Margin="20,0,20,0" />
+                    <Label Text="{Binding Source={x:Reference TranslationYSlider}, Path=Value, StringFormat='Translation Y ({0:N})'}" />
+                    <Slider x:Name="TranslationYSlider" Minimum="-300" Maximum="300" Value="0" Margin="20,0,20,0" />
+                    <Label Text="{Binding Source={x:Reference RotationSlider}, Path=Value, StringFormat='Rotation ({0:N})'}" />
+                    <Slider x:Name="RotationSlider" Minimum="-720" Maximum="720" Value="0" Margin="20,0,20,0" />
+                    <Label Text="{Binding Source={x:Reference RotationXSlider}, Path=Value, StringFormat='Rotation X ({0:N})'}" />
+                    <Slider x:Name="RotationXSlider" Minimum="-720" Maximum="720" Value="0" Margin="20,0,20,0" />
+                    <Label Text="{Binding Source={x:Reference RotationYSlider}, Path=Value, StringFormat='Rotation Y ({0:N})'}" />
+                    <Slider x:Name="RotationYSlider" Minimum="-720" Maximum="720" Value="0" Margin="20,0,20,0" />
+                </StackLayout>
+            </ScrollView>
+        </Frame>
+    </Grid>
+</ContentPage>

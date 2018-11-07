@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Animations.Views.Title">
+            <Grid RowSpacing="0" ColumnSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <BoxView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"  BackgroundColor="{StaticResource HeaderBackground}"/>
+                <Label Text="Mugello Circuit" Grid.Row="0" Grid.ColumnSpan="2" TextColor="{StaticResource LightText}" FontSize="35" FontAttributes="Bold" Margin="20"/>
+                <BoxView Grid.Row="1" Grid.Column="1" BackgroundColor="{StaticResource SubHeaderBackground}"/>
+                <Label Text="JUNE 3, 2018" HorizontalOptions="End" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" Margin="20,0" TextColor="{StaticResource SubHeaderText}"/>
+            </Grid>
+</ContentView>

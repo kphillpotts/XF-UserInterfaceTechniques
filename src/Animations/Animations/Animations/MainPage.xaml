@@ -1,19 +1,37 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Animations"
-             x:Class="Animations.MainPage">
+<ContentPage
+    x:Class="Animations.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Animations">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Button x:Name="TransformPropertiesButton"
-                Text="Page Animations" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" Clicked="Handle_Clicked" />
-        <Button x:Name="BindablePropertiesButton"
-                Text="Bindable Properties" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" Clicked="BindablePropertiesButton_Clicked" />
+    <StackLayout VerticalOptions="Center">
+        <!--  Place new controls here  -->
+        <Button
+            x:Name="TransformPropertiesButton"
+            Clicked="Handle_Clicked"
+            HorizontalOptions="Center"
+            Text="Page Animations" />
+        <Button
+            x:Name="BindablePropertiesButton"
+            Clicked="BindablePropertiesButton_Clicked"
+            HorizontalOptions="Center"
+            Text="Bindable Properties" />
+
+        <Button
+            x:Name="ParallaxButton"
+            Clicked="ParallaxButton_Clicked"
+            HorizontalOptions="Center"
+            Text="Parralax Header" />
+
+        <Button
+            x:Name="ShakeAnimationButton"
+            Clicked="ShakeAnimationButton_Clicked"
+            HorizontalOptions="Center"
+            Text="Login Interaction" />
+
+
+
     </StackLayout>
 
 </ContentPage>

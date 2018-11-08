@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Animations.ParallaxHeader"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <ListView x:Name="MyListView">
+        <ListView.Header>
+            <Grid
+                BackgroundColor="#040237"
+                ColumnSpacing="0"
+                HeightRequest="200"
+                IsClippedToBounds="True"
+                RowSpacing="0">
+                <!--<Image
+                    x:Name="HeaderImage"
+                    Aspect="AspectFill"
+                    Source="MonkeyHeader.png" />-->
+                <Image
+                    x:Name="Background"
+                    Aspect="AspectFill"
+                    Source="Background" />
+                <Image x:Name="Stars" Source="Stars" />
+
+                <Image
+                    x:Name="Rocket"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"
+                    Source="Rocket.png"
+                    VerticalOptions="Center"
+                    WidthRequest="50" />
+                <Image
+                    x:Name="Clouds2"
+                    Margin="0,80,0,0"
+                    Source="Clouds2.png"
+                    VerticalOptions="End" />
+                <Image
+                    x:Name="Clouds"
+                    HorizontalOptions="Center"
+                    Source="Clouds.png"
+                    TranslationY="2"
+                    VerticalOptions="End" />
+                <Image
+                    x:Name="Moon"
+                    Margin="20"
+                    HeightRequest="40"
+                    HorizontalOptions="End"
+                    Source="Moon.png"
+                    VerticalOptions="Start"
+                    WidthRequest="40" />
+
+            </Grid>
+        </ListView.Header>
+    </ListView>
+
+</ContentPage>

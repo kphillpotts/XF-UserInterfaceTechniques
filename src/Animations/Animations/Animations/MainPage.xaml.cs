@@ -24,6 +24,16 @@ namespace Animations
             Navigation.PushAsync(new VisualElementPropertiesPage());
         }
 
+        public void ShakeAnimationButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ShakeAnimation());
+        }
 
+        public void ParallaxButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ParallaxHeader());
+        }
+
+        
     }
 }

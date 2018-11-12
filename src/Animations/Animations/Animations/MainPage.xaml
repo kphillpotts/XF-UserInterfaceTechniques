@@ -4,34 +4,30 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Animations">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
     <StackLayout VerticalOptions="Center">
-        <!--  Place new controls here  -->
         <Button
-            x:Name="TransformPropertiesButton"
-            Clicked="Handle_Clicked"
-            HorizontalOptions="Center"
-            Text="Page Animations" />
-        <Button
-            x:Name="BindablePropertiesButton"
             Clicked="BindablePropertiesButton_Clicked"
-            HorizontalOptions="Center"
             Text="Bindable Properties" />
 
         <Button
-            x:Name="ParallaxButton"
-            Clicked="ParallaxButton_Clicked"
-            HorizontalOptions="Center"
-            Text="Parralax Header" />
+            Clicked="Handle_Clicked"
+            Text="Page Animations" />
 
         <Button
-            x:Name="ShakeAnimationButton"
+            Clicked="ParallaxButton_Clicked"
+            Text="Parallax Header" />
+
+        <Button
             Clicked="ShakeAnimationButton_Clicked"
-            HorizontalOptions="Center"
             Text="Login Interaction" />
-
-
-
     </StackLayout>
-
 </ContentPage>

@@ -14,6 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Remove="Cells\OverlappingViewCell.xaml" />
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Include="ChoreBackground.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -39,5 +42,8 @@
     <EmbeddedResource Update="ViewCellOverlapping.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Cells\OverlappingViewCell.xaml.cs" />
   </ItemGroup>
 </Project>

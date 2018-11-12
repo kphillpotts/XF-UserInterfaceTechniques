@@ -30,12 +30,16 @@ namespace Layouts
         }
         SKBitmap resourceBitmap;
 
+        void Handle_ValueChanged(object sender, Xamarin.Forms.ValueChangedEventArgs e)
+        {
+            SkiaCanvas.InvalidateSurface();
+        }
 
         void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
         {
             // work out points for the path considering denisity of device
             float densityMultiplier = args.Info.Height / (float)SkiaCanvas.Height;
-            var curveAmount = 40 * densityMultiplier;
+            var curveAmount = (float)CurveAmount.Value * densityMultiplier;
             float curveStart = args.Info.Height - curveAmount;
             float curveEnd = args.Info.Height + curveAmount;
 

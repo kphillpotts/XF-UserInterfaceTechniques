@@ -1,9 +1,21 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ResourceDictionary
     x:Class="FontsStylesAndThemes.Styles.GlobalStyles"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-
+    
+    <!--
+    
+    Implicit styles for the application which should be 
+    applied by default to particular types.
+    
+    Useful if you wanted to do something like style all
+    the buttons in your application, or apply default
+    values for spacing.
+    
+    -->
+    
+    
     <Style TargetType="Grid">
         <Setter Property="ColumnSpacing" Value="0" />
         <Setter Property="RowSpacing" Value="0" />

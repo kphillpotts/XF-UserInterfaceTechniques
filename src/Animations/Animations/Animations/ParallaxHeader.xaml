@@ -1,27 +1,23 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="Animations.ParallaxHeader"
+    BackgroundColor="Yellow"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Parallax Header">
 
-    <ListView x:Name="MyListView">
+    <ListView x:Name="MyListView" >
         <ListView.Header>
             <Grid
                 BackgroundColor="#040237"
-                ColumnSpacing="0"
                 HeightRequest="200"
-                IsClippedToBounds="True"
-                RowSpacing="0">
-                <!--<Image
-                    x:Name="HeaderImage"
-                    Aspect="AspectFill"
-                    Source="MonkeyHeader.png" />-->
+                IsClippedToBounds="True">
                 <Image
                     x:Name="Background"
                     Aspect="AspectFill"
                     Source="Background" />
                 <Image x:Name="Stars" Source="Stars" />
-
+                
                 <Image
                     x:Name="Rocket"
                     HeightRequest="50"
@@ -48,7 +44,6 @@
                     Source="Moon.png"
                     VerticalOptions="Start"
                     WidthRequest="40" />
-
             </Grid>
         </ListView.Header>
     </ListView>

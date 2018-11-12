@@ -159,12 +159,24 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\Layouts\Layouts.csproj">
-      <Project>{ACFF352F-7D59-473D-9C04-022C3C3330CA}</Project>
+      <Project>{FC48CFB8-65B8-4A76-9DB6-A248D8B7CF17}</Project>
       <Name>Layouts</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\CookieMonster.png" />
+    <BundleResource Include="Resources\HeaderBackground%403x.png" />
+    <BundleResource Include="Resources\Header%403x.png" />
+    <BundleResource Include="Resources\HeaderBackground%402x.png" />
+    <BundleResource Include="Resources\Header%402x.png" />
+    <BundleResource Include="Resources\ProfilePic%403x.png" />
+    <BundleResource Include="Resources\HeaderBackground.png" />
+    <BundleResource Include="Resources\Header.png" />
+    <BundleResource Include="Resources\ProfilePic%402x.png" />
+    <BundleResource Include="Resources\ProfilePic.png" />
+    <BundleResource Include="Resources\CurvedMask%403x.png" />
+    <BundleResource Include="Resources\CurvedMask%402x.png" />
+    <BundleResource Include="Resources\CurvedMask.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Person_2.jpg" />

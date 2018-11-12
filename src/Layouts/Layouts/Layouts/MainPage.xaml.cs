@@ -35,5 +35,9 @@ namespace Layouts
             Navigation.PushAsync(new NonRectangularHeader());
         }
 
+        private void profileButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ProfilePage());
+        }
     }
 }

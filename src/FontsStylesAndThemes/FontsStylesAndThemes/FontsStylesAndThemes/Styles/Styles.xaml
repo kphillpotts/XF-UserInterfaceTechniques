@@ -1,9 +1,19 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ResourceDictionary
     x:Class="FontsStylesAndThemes.Styles.Styles"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-
+    
+    <!--
+    
+    This is where everything comes together and you create your styles
+    which you would apply to your elements.  
+    
+    Again, it is useful to name the styles based on how they are used, 
+    rather than what values they contain.
+    
+    -->
+    
     <Style x:Key="H1LabelStyle" TargetType="Label">
         <Setter Property="TextColor" Value="{DynamicResource AccentColor}" />
         <Setter Property="FontSize" Value="{DynamicResource H1FontSize}" />

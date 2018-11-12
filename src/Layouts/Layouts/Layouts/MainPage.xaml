@@ -7,19 +7,18 @@
 
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
         <Button
-            x:Name="overlappingGridButton"
             Clicked="overlappingGridButton_Clicked"
             Text="Responsive Grid" />
         <Button
-            x:Name="circleImageButton"
+            Clicked="profileButton_Clicked"
+            Text="Profile Page"/>
+        <Button
             Clicked="circleImageButton_Clicked"
             Text="Circle Images" />
         <Button
-            x:Name="viewCellOverlappingButton"
             Clicked="viewCellOverlappingButton_Clicked"
             Text="Overlapping View Cell" />
         <Button
-            x:Name="nonRectuangularHeaderButton"
             Clicked="nonRectuangularHeaderButton_Clicked"
             Text="Non Rectangular Header" />
     </StackLayout>

@@ -1,9 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ResourceDictionary
     x:Class="FontsStylesAndThemes.Styles.FontStyles"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-
+    
+    <!--
+    
+    The various font families that are used in the application
+    
+    -->
+    
     <OnPlatform x:Key="HeaderFontFamily" x:TypeArguments="x:String" />
     <OnPlatform x:Key="BodyFontFamily" x:TypeArguments="x:String" />
 

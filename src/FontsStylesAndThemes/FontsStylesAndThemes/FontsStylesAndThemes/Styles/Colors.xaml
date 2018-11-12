@@ -1,9 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ResourceDictionary
     x:Class="FontsStylesAndThemes.Styles.Colors"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-
+    
+    <!-- 
+    
+    All the colors used throughout the application.
+    Best practice is to name your resources based on their
+    usage, rather than what value they contain.  
+    
+    -->
+    
     <Color x:Key="BackgroundColor">#EEEEEE</Color>
 
     <Color x:Key="AccentColor">#50e3c2</Color>

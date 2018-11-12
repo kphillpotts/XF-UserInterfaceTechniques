@@ -1,9 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ResourceDictionary
     x:Class="FontsStylesAndThemes.Styles.Sizes"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-
+    
+    <!--
+    
+    A good place to specify the sizes of fonts and/or default
+    values for margins, paddings, border sizes, whatever.
+    
+    -->
+    
     <x:Double x:Key="H1FontSize">32</x:Double>
     <x:Double x:Key="H2FontSize">24</x:Double>
     <x:Double x:Key="BodyFontSize">14</x:Double>

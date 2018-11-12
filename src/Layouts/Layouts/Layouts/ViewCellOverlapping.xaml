@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="Layouts.ViewCellOverlapping"
     xmlns="http://xamarin.com/schemas/2014/forms"
@@ -64,11 +64,13 @@
             HorizontalOptions="Fill"
             Source="ColoredBackground"
             VerticalOptions="Fill" />
-        <ListView
+          <ListView
             x:Name="placeList"
+            
             BackgroundColor="Transparent"
             ItemsSource="{Binding .}"
             RowHeight="200"
+            SelectionMode="None"
             SeparatorVisibility="None">
             <ListView.ItemTemplate>
                 <DataTemplate>

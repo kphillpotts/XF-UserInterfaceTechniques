@@ -1,10 +1,26 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="Layouts.ResponsiveGrid"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    >
+   
+    <Grid BackgroundColor="Gray" RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>    
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <BoxView BackgroundColor="Yellow" Grid.Row="0"/>
+        <BoxView BackgroundColor="LightBlue" Grid.Row="1"/>
+        <BoxView BackgroundColor="Red" WidthRequest="80" HeightRequest="80" 
+                 HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" TranslationY="40"/>
+    </Grid>
 
-    <Grid ColumnSpacing="0" RowSpacing="0">
+    
+    
+    
+<!--    <Grid ColumnSpacing="0" RowSpacing="0">
         <Grid.RowDefinitions>
             <RowDefinition Height="120" />
             <RowDefinition Height="*" />
@@ -36,5 +52,4 @@
             VerticalOptions="End"
             WidthRequest="80" />
     </Grid>
-
-</ContentPage>
+--></ContentPage>

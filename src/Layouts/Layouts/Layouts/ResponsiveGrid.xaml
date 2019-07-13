@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="Layouts.ResponsiveGrid"
     xmlns="http://xamarin.com/schemas/2014/forms"
@@ -13,13 +13,16 @@
         
         <BoxView BackgroundColor="Yellow" Grid.Row="0"/>
         <BoxView BackgroundColor="LightBlue" Grid.Row="1"/>
-        <BoxView BackgroundColor="Red" WidthRequest="80" HeightRequest="80" 
-                 HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" TranslationY="40"/>
+        <BoxView WidthRequest="80" HeightRequest="80" 
+                 HorizontalOptions="Center" VerticalOptions="End" Grid.Row="0" 
+                 Color="Red" CornerRadius="40"
+                 TranslationY="40"/>
     </Grid>
 
     
     
     
+
 <!--    <Grid ColumnSpacing="0" RowSpacing="0">
         <Grid.RowDefinitions>
             <RowDefinition Height="120" />
